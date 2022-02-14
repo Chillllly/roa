@@ -7,13 +7,15 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
     <title>Album example · Bootstrap v5.1</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
-
     
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
+    <!-- Bootstrap JS -->
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Bootstrap core CSS -->
-<link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
 
     <style>
       .bd-placeholder-img {
@@ -30,262 +32,122 @@
         }
       }
     </style>
-
-    
   </head>
-  <body>
-    
-<header>
-  <div class="collapse bg-dark" id="navbarHeader">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-8 col-md-7 py-4">
-          <h4 class="text-white">About</h4>
-          <p class="text-muted">시골동네에서 데려온 강아지에요. 예쁜 공주님이구 항상 불쌍한 표정을 하고 있어서 제가 때려서 그렇다는 오해를 많이 받아요. 세상에서 가장 겁이 많은 강아지입니다. 얌전하고 조용한편이고 남자를 극도로 싫어해요. 잘 안짖는데 키큰남자를 특히 더 싫어해서 그런지 엄청 짖습니다. 그래도 물진않아요. 똑똑해서 앉아, 일어서, 하우스, 코, 브이, 돌아 이거 다 할 줄 알아요. 어쩌다보니 저랑 많이 닮은 아이를 입양해오게 되었어요. 강아지키우는건 처음이라 사건 사고도 많지만 그래도 행복하게 해주고싶어요. 아프지말고 건강하게만 옆에 있어줬으면 좋겠어요. </p>
-        </div>
-        <div class="col-sm-4 offset-md-1 py-4">
-          <h4 class="text-white">Contact</h4>
-          <ul class="list-unstyled">
-            <li><a href="https://www.instagram.com/kyungsang.yoo/" class="text-white">https://www.instagram.com/kyungsang.yoo</a></li>
-            <li>010-3098-2354</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-        <strong>로아❤</strong>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </div>
-</header>
-
-<main>
-
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">로아 사진첩</h1>
-        <p class="lead text-muted">예쁘고 건강하게 커가는 모습을 남기고 싶어요.</p>
-        <p class="lead text-muted">우리 오래오래 함께 행복하자 로아야❤</p>
-        <!--
-        <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p>
-        -->
-      </div>
-    </div>
-  </section>
-
-  <div class="album py-5 bg-light">
-    <div class="container">
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-5">
-        <div class="col">
-          <div class="card shadow-sm">
-            <img width="100%" height="225" src="./img/01.jpg"/>
-
-            <div class="card-body">
-              <p class="card-text">내용</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">상세</button>
-                </div>
-                <small class="text-muted"></small>
-              </div>
-            </div>
+<body>
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">시골동네에서 데려온 강아지에요. 예쁜 공주님이구 항상 불쌍한 표정을 하고 있어서 제가 때려서 그렇다는 오해를 많이 받아요. 세상에서 가장 겁이 많은 강아지입니다. 얌전하고 조용한편이고 남자를 극도로 싫어해요. 잘 안짖는데 키큰남자를 특히 더 싫어해서 그런지 엄청 짖습니다. 그래도 물진않아요. 똑똑해서 앉아, 일어서, 하우스, 코, 브이, 돌아 이거 다 할 줄 알아요. 어쩌다보니 저랑 많이 닮은 아이를 입양해오게 되었어요. 강아지키우는건 처음이라 사건 사고도 많지만 그래도 행복하게 해주고싶어요. 아프지말고 건강하게만 옆에 있어줬으면 좋겠어요. </p>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img width="100%" height="225" src="./img/02.jpg"/>
-
-            <div class="card-body">
-              <p class="card-text">내용</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">상세</button>
-                </div>
-                <small class="text-muted"></small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img width="100%" height="225" src="./img/03.jpg"/>
-
-            <div class="card-body">
-              <p class="card-text">내용</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">상세</button>
-                </div>
-                <small class="text-muted"></small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img width="100%" height="225" src="./img/04.jpg"/>
-
-            <div class="card-body">
-              <p class="card-text">내용</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">상세</button>
-                </div>
-                <small class="text-muted"></small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img width="100%" height="225" src="./img/05.jpg"/>
-
-            <div class="card-body">
-              <p class="card-text">내용</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">상세</button>
-                </div>
-                <small class="text-muted"></small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img width="100%" height="225" src="./img/06.jpg"/>
-
-            <div class="card-body">
-              <p class="card-text">내용</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">상세</button>
-                </div>
-                <small class="text-muted"></small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img width="100%" height="225" src="./img/07.jpg"/>
-
-            <div class="card-body">
-              <p class="card-text">내용</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">상세</button>
-                </div>
-                <small class="text-muted"></small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img width="100%" height="225" src="./img/08.jpg"/>
-
-            <div class="card-body">
-              <p class="card-text">내용</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">상세</button>
-                </div>
-                <small class="text-muted"></small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img width="100%" height="225" src="./img/09.jpg"/>
-
-            <div class="card-body">
-              <p class="card-text">내용</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">상세</button>
-                </div>
-                <small class="text-muted"></small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img width="100%" height="225" src="./img/10.jpg"/>
-
-            <div class="card-body">
-              <p class="card-text">내용</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">상세</button>
-                </div>
-                <small class="text-muted"></small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img width="100%" height="225" src="./img/11.jpg"/>
-
-            <div class="card-body">
-              <p class="card-text">내용</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">상세</button>
-                </div>
-                <small class="text-muted"></small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <img width="100%" height="225" src="./img/12.jpg"/>
-
-            <div class="card-body">
-              <p class="card-text">내용</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">상세</button>
-                </div>
-                <small class="text-muted"></small>
-              </div>
-            </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="https://www.instagram.com/kyungsang.yoo/" class="text-white">https://www.instagram.com/kyungsang.yoo</a></li>
+              <li>010-3098-2354</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <strong>roa</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">로아❤</h1>
+          <p class="lead text-muted">예쁘고 건강하게 커가는 모습을 남기고 싶어요.</p>
+          <!--
+          <p>
+            <a href="#" class="btn btn-primary my-2">Main call to action</a>
+            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+          </p>
+          -->
+        </div>
+      </div>
+    </section>
 
-</main>
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div id="content" class="row row-cols-1 row-cols-sm-2 row-cols-md-5 g-5"></div>
+      </div>
+    </div>
+  </main>
 
-<footer class="text-muted py-5">
-  <div class="container">
-    <p class="float-end mb-1">
-      <a href="#">Back to top</a>
-    </p>
-    <p class="mb-1">&copy; 2022 kyung sang yoo. All rights reserved.</p>
-  </div>
-</footer>
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">top</a>
+      </p>
+      <p class="mb-1">&copy; 2022 kyung sang yoo. All rights reserved.</p>
+    </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">roa💕</h4>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> -->
+          </div>
+          <div class="modal-body">
 
-    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+          </div>
+          <!-- <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </footer>
 
-      
+  <script>
+  var picCnt = 30;
+
+  for(var i=0; i<picCnt; i++){
+    var idx = i+1+"";
+    var picNum = idx.padStart(2,'0');
+    var htmlContent = "";
+
+    htmlContent += '<div class="col" style="cursor: pointer;">';
+    htmlContent += '  <div class="card shadow-sm">';
+    htmlContent += '    <img width="100%" height="200" src="./img/'+picNum+'.jpg"/>';
+    htmlContent += '    <div class="card-body">';
+    htmlContent += '      <p class="card-text"></p>';
+    htmlContent += '      <div class="d-flex justify-content-between align-items-center">';
+    htmlContent += '        <div class="btn-group"></div>';
+    htmlContent += '        <small class="text-muted"></small>';
+    htmlContent += '      </div>';
+    htmlContent += '    </div>';
+    htmlContent += '  </div>';
+    htmlContent += '</div>';
+
+    $("#content").append(htmlContent);
+  }
+
+  $("img").on('click',function(){
+    imgUrl = $(this).attr('src');
+    img = '<img src="'+imgUrl+'\" width="100%" />';
+  
+    $('.modal-body').html(img);
+    $('#myModal').modal();
+    $('#myModal').modal('show');
+  });
+  
+  </script>
   </body>
 </html>
