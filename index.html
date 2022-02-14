@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="author" content="yoo">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Album example · Bootstrap v5.1</title>
+    <title>roa album</title>
     
     <!-- Remember to include jQuery :) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
@@ -119,8 +119,9 @@
   var picCnt = 30;
 
   for(var i=0; i<picCnt; i++){
-    var idx = i+1+"";
-    var picNum = idx.padStart(2,'0');
+    var num = i+1+"";
+    var picNum = num < 10 && num >= 0 ? "0" + num : num;
+
     var htmlContent = "";
 
     htmlContent += '<div class="col" style="cursor: pointer;">';
@@ -143,11 +144,17 @@
     imgUrl = $(this).attr('src');
     img = '<img src="'+imgUrl+'\" width="100%" />';
   
-    $('.modal-body').html(img);
-    $('#myModal').modal();
-    $('#myModal').modal('show');
+    var agent = navigator.userAgent.toLowerCase(); 
+    if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) { 
+      window.open(imgUrl);
+    }else{
+      $('.modal-body').html(img);
+      $('#myModal').modal();
+      $('#myModal').modal('show');
+    }
+
   });
-  
+
   </script>
   </body>
 </html>
